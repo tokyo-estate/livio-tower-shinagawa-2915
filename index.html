@@ -86,7 +86,7 @@ figcaption .t{color:#fff;font-weight:400}
 .grid{display:grid;gap:22px 14px;grid-template-columns:1fr}
 .grid-2{grid-template-columns:1fr 1fr}
 .grid img{width:100%;aspect-ratio:var(--ar,4/3);object-fit:cover;background:#222}
-.ar-3-4{--ar:3/4}.ar-16-9{--ar:16/9}.ar-1-1{--ar:1/1}
+.ar-3-4{--ar:3/4}.ar-16-9{--ar:16/9}.ar-1-1{--ar:1/1}.ar-auto{--ar:auto;object-fit:contain;background:#fff}
 .stack{display:grid;gap:44px}
 
 /* reveal */
@@ -191,7 +191,8 @@ figcaption .t{color:#fff;font-weight:400}
 .close .p b{display:block;font-size:clamp(40px,11vw,76px);color:var(--gold2);font-weight:700;letter-spacing:.02em;line-height:1;margin-top:6px}
 .close ul{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 10px;margin-top:26px;font-size:12px;letter-spacing:.12em;color:#e8e4dc}
 .close li{padding:6px 12px;border:1px solid rgba(255,255,255,.35);border-radius:999px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-footer{padding:28px 20px calc(28px + env(safe-area-inset-bottom));background:#06080a;font-size:11px;color:#8a8478;line-height:1.9;text-align:center;letter-spacing:.06em}
+footer{padding:28px 20px calc(28px + env(safe-area-inset-bottom));background:#06080a;font-size:11px;color:#8a8478;line-height:1.9;text-align:left;letter-spacing:.06em}
+footer p{max-width:760px;margin:0 auto 6px;padding-left:1em;text-indent:-1em}
 
 /* ---------- responsive ---------- */
 .pc{display:none}
@@ -561,7 +562,7 @@ figcaption .d{display:none}
       <h2>物件概要</h2>
     </div>
     <div class="grid grid-d2 rv" style="align-items:start">
-      <figure style="background:#fff;padding:14px;border:1px solid #e4dfd6"><img src="img/u00_plan2d.jpg" width="1660" height="1740" loading="lazy" alt="間取図 60Cs"><figcaption><span class="t">間取図</span><span class="d">　2LDK（壁芯 60.18㎡）</span></figcaption></figure>
+      <figure style="background:#fff;padding:14px;border:1px solid #e4dfd6"><img class="ar-auto" src="img/u00_plan2d.jpg" width="1660" height="1740" loading="lazy" alt="間取図 60Cs"><figcaption><span class="t">間取図</span><span class="d">　2LDK（壁芯 60.18㎡）</span></figcaption></figure>
       <div>
         <table class="tbl">
           <tr><th>物件名</th><td>リビオタワー品川　2915号室</td></tr>
@@ -602,9 +603,9 @@ figcaption .d{display:none}
 </section>
 
 <footer>
-  ※専有部の写真は2026年10月撮影。共用部・外観・周辺の写真および動画は竣工後に撮影されたもので、一部CG・完成予想図を含みます。<br>
-  ※掲載内容は2026年10月現在のものです。共用施設・サービスの内容は管理規約に従い、変更となる場合があります。<br>
-  ※家具・調度品は販売価格に含まれません。
+  <p>※専有部の写真は2026年10月撮影。共用部・外観・周辺の写真および動画は竣工後に撮影されたもので、一部CG・完成予想図を含みます。</p>
+  <p>※掲載内容は2026年10月現在のものです。共用施設・サービスの内容は管理規約に従い、変更となる場合があります。</p>
+  <p>※家具・調度品は販売価格に含まれません。</p>
 </footer>
 
 <script>
